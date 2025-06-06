@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -14,21 +13,18 @@ body {
   font-family: 'Times New Roman', Times, serif;
 }
 
+body:hover{
+  color:rgb(117, 191, 191);
+  border-radius: 2cm;
+}
+
 h1 {
-  color:lightsteelblue;
+  color: lightsteelblue;
   font-family: Papyrus, serif;
 }
 
-#intro {
-  position: fixed;
-  padding-top: 5%;
-  padding-left: 10%;
-  max-width: 40%;
-}
-
-#intro h3 {
-  font-family: "Comic Papyrus", serif;
-  color: lightsteelblue;
+h3, ul {
+  color: rgb(132, 161, 196);
 }
 
 a:link {
@@ -42,7 +38,58 @@ a:hover {
   color: lightgoldenrodyellow;
 }
 
-/* Nav links */
+p {
+  color: rgb(132, 161, 196);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2em;
+}
+
+#intro {
+  position: fixed;
+  padding-top: 5%;
+  padding-left: 10%;
+  max-width: 40%;
+}
+#intro h3 {
+  font-family: "Comic Papyrus", serif;
+  color: lightsteelblue;
+}
+
+#nav {
+  position: fixed;
+  padding-top: 17%;
+  padding-left: 10%;
+  max-width: 40%;
+  z-index: 6;
+}
+
+#contact {
+  position: fixed;
+  padding-top: 29%;
+  padding-left: 15%;
+  max-width: 40%;
+  z-index: 3;
+}
+
+#main {
+  padding-top: 5%;
+}
+
+#main, #projects, #certifications, #experience {
+  position: relative;
+  top: 5px;
+  scroll-margin-top: 63px;
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-left: 45%;
+  padding-right: 15%;
+}
+
+#experience {
+  margin-bottom: 30%;
+}
+
+/* Navigation links */
 .dlink {
   position: relative;
   padding-left: 22px;
@@ -76,87 +123,26 @@ a:hover {
   text-decoration: underline;
 }
 
-#nav {
-  position: fixed;
-  padding-top: 17%;
-  padding-left: 10%;
-  max-width: 40%;
-  z-index: 6;
-}
-#contact {
-  position: fixed;
-  padding-top: 29%;
-  padding-left: 15%;
-  max-width: 40%;
-  z-index: 3;
-}
-
+/* Social icons */
 .social {
   text-decoration: none;
   margin-right: 15px;
   font-size: 1.6em;
   transition: transform 0.2s ease-in-out;
 }
-
 .social i {
   transition: color 0.3s ease-in-out;
 }
-
-/* Custom colors */
-.social.linkedin i {
-  color: rgb(117, 191, 191); /* LinkedIn blue */
-}
+.social.linkedin i,
 .social.instagram i {
-  color: rgb(117, 191, 191); /* Instagram pink */
+  color: rgb(117, 191, 191);
 }
-
-/* Hover effects */
 .social:hover {
   transform: scale(1.2);
 }
-
-.social.linkedin:hover i {
-  color: lightgoldenrodyellow;
-}
-
+.social.linkedin:hover i,
 .social.instagram:hover i {
   color: lightgoldenrodyellow;
-}
-#main
-{
-    padding-top: 5%;
-}
-
-/* Scroll-linked sections 
-section, #main, #projects, #certifications, #experience {
-  scroll-margin-top: 5%;
-  padding-top: 20px;
-  position: relative;
-  margin-top: 5%;
-  left: 40%;
-  padding-left: 45%;
-  padding-right: 15%;
-  z-index: 1;
-}
-  */
-#main, #projects, #certifications, #experience {
-  position: relative;
-  top: 5px;
-  scroll-margin-top: 63px;
-  margin-top: 60px; /* optional vertical gap between sections */
-  padding-top: 60px;
-  padding-left: 45%;
-  padding-right: 15%;
-}
-#experience
-{
-    margin-bottom: 30%;
-}
-/* Paragraphs */
-p {
-  color: rgb(132, 161, 196);
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.2em;
 }
 
 /* Certificate list */
@@ -194,15 +180,17 @@ h3 a:hover {
   transform: scale(1.05);
 }
 
-/* General formatting */
+/* Misc */
 .arrow {
   list-style-type: none;
 }
-h3, ul {
-  color: rgb(132, 161, 196);
-}
-/* 🔻 Responsive design for tablets and mobile */
 
+.proximity-glow {
+  box-shadow: 0 0 10px cornflowerblue;
+  transition: background-color 0.2s ease;
+}
+
+/* Responsive */
 @media (max-width: 1024px) {
   #intro, #nav, #contact {
     position: static;
@@ -210,7 +198,6 @@ h3, ul {
     padding: 20px 5%;
     text-align: center;
   }
-
   #main, #projects, #certifications, #experience {
     padding-left: 5%;
     padding-right: 5%;
@@ -222,297 +209,31 @@ h3, ul {
     font-size: clamp(1.5rem, 6vw, 2rem);
     text-align: center;
   }
-
   p {
     font-size: clamp(1rem, 2.5vw, 1.2em);
   }
-
   .dlink {
     display: block;
     padding: 10px 0;
     font-size: 1em;
     text-align: center;
   }
-
   .social {
     font-size: 1.2em;
     display: inline-block;
     margin: 8px;
   }
-
   .cert-list h3 {
     font-size: 1em;
   }
-
   .cert-list h3 small {
     font-size: 0.8em;
   }
-
   #intro, #nav, #contact {
     padding: 10px;
     text-align: center;
   }
-
   #main, #projects, #certifications, #experience {
     padding: 10px;
   }
-=======
-html {
-  scroll-behavior: smooth;
-  box-sizing: border-box;
-}
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 20px;
-  padding: 0;
-  background-color: rgb(17, 24, 44);
-  font-family: 'Times New Roman', Times, serif;
-}
-
-h1 {
-  color:lightsteelblue;
-  font-family: Papyrus, serif;
-}
-
-#intro {
-  position: fixed;
-  padding-top: 5%;
-  padding-left: 10%;
-  max-width: 40%;
-}
-
-#intro h3 {
-  font-family: "Comic Papyrus", serif;
-  color: lightsteelblue;
-}
-
-a:link {
-  color: rgb(117, 191, 191);
-  text-decoration: none;
-}
-a:visited {
-  color: peachpuff;
-}
-a:hover {
-  color: lightgoldenrodyellow;
-}
-
-/* Nav links */
-.dlink {
-  position: relative;
-  padding-left: 22px;
-  display: inline-block;
-  font-family: Georgia, serif;
-  font-weight: bold;
-  color: rgb(117, 191, 191);
-  text-decoration: none;
-  transition: transform 0.2s ease-in-out;
-  transform-origin: left center;
-  cursor: pointer;
-}
-.dlink::before {
-  content: "⟶ ";
-  position: relative;
-  left: 0;
-  color: inherit;
-  transition: transform 0.2s ease-in-out;
-  transform-origin: left center;
-}
-.dlink:hover,
-.dlink:active {
-  transform: scale(1.1);
-}
-.dlink:hover::before,
-.dlink:active::before {
-  transform: scale(1.2);
-}
-.dlink.active {
-  color: lightgoldenrodyellow;
-  text-decoration: underline;
-}
-
-#nav {
-  position: fixed;
-  padding-top: 17%;
-  padding-left: 10%;
-  max-width: 40%;
-  z-index: 6;
-}
-#contact {
-  position: fixed;
-  padding-top: 29%;
-  padding-left: 15%;
-  max-width: 40%;
-  z-index: 3;
-}
-
-.social {
-  text-decoration: none;
-  margin-right: 15px;
-  font-size: 1.6em;
-  transition: transform 0.2s ease-in-out;
-}
-
-.social i {
-  transition: color 0.3s ease-in-out;
-}
-
-/* Custom colors */
-.social.linkedin i {
-  color: rgb(117, 191, 191); /* LinkedIn blue */
-}
-.social.instagram i {
-  color: rgb(117, 191, 191); /* Instagram pink */
-}
-
-/* Hover effects */
-.social:hover {
-  transform: scale(1.2);
-}
-
-.social.linkedin:hover i {
-  color: lightgoldenrodyellow;
-}
-
-.social.instagram:hover i {
-  color: lightgoldenrodyellow;
-}
-#main
-{
-    padding-top: 5%;
-}
-
-/* Scroll-linked sections 
-section, #main, #projects, #certifications, #experience {
-  scroll-margin-top: 5%;
-  padding-top: 20px;
-  position: relative;
-  margin-top: 5%;
-  left: 40%;
-  padding-left: 45%;
-  padding-right: 15%;
-  z-index: 1;
-}
-  */
-#main, #projects, #certifications, #experience {
-  position: relative;
-  top: 5px;
-  scroll-margin-top: 63px;
-  margin-top: 60px; /* optional vertical gap between sections */
-  padding-top: 60px;
-  padding-left: 45%;
-  padding-right: 15%;
-}
-#experience
-{
-    margin-bottom: 30%;
-}
-/* Paragraphs */
-p {
-  color: rgb(132, 161, 196);
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.2em;
-}
-
-/* Certificate list */
-.cert-list {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 10px;
-}
-.cert-list li {
-  margin-bottom: 12px;
-  border-left: 3px solid rgb(117, 191, 191);
-  padding-left: 10px;
-  background-color: rgba(255, 255, 255, 0.03);
-  border-radius: 4px;
-}
-.cert-list h3 {
-  margin: 0;
-  color: rgb(132, 161, 196);
-  font-size: 1.05em;
-}
-.cert-list h3 small {
-  display: block;
-  margin-left: 8px;
-  font-size: 0.85em;
-  color: lightsteelblue;
-  font-style: italic;
-}
-h3 a {
-  color: rgb(117, 191, 191);
-  transition: all 0.2s ease-in-out;
-}
-h3 a:hover {
-  color: lightgoldenrodyellow;
-  text-decoration: underline;
-  transform: scale(1.05);
-}
-
-/* General formatting */
-.arrow {
-  list-style-type: none;
-}
-h3, ul {
-  color: rgb(132, 161, 196);
-}
-/* 🔻 Responsive design for tablets and mobile */
-
-@media (max-width: 1024px) {
-  #intro, #nav, #contact {
-    position: static;
-    max-width: 100%;
-    padding: 20px 5%;
-    text-align: center;
-  }
-
-  #main, #projects, #certifications, #experience {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: clamp(1.5rem, 6vw, 2rem);
-    text-align: center;
-  }
-
-  p {
-    font-size: clamp(1rem, 2.5vw, 1.2em);
-  }
-
-  .dlink {
-    display: block;
-    padding: 10px 0;
-    font-size: 1em;
-    text-align: center;
-  }
-
-  .social {
-    font-size: 1.2em;
-    display: inline-block;
-    margin: 8px;
-  }
-
-  .cert-list h3 {
-    font-size: 1em;
-  }
-
-  .cert-list h3 small {
-    font-size: 0.8em;
-  }
-
-  #intro, #nav, #contact {
-    padding: 10px;
-    text-align: center;
-  }
-
-  #main, #projects, #certifications, #experience {
-    padding: 10px;
-  }
->>>>>>> 38803a93c97e4975eef8e475c1bb5dd432719610
 }
